@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Getlaptop">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetlaptopResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetlaptopResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Getmouse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetmouseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetmouseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Getpendrive">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetpendriveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetpendriveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetlaptopSoapIn">
+    <wsdl:part name="parameters" element="tns:Getlaptop" />
+  </wsdl:message>
+  <wsdl:message name="GetlaptopSoapOut">
+    <wsdl:part name="parameters" element="tns:GetlaptopResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetmouseSoapIn">
+    <wsdl:part name="parameters" element="tns:Getmouse" />
+  </wsdl:message>
+  <wsdl:message name="GetmouseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetmouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetpendriveSoapIn">
+    <wsdl:part name="parameters" element="tns:Getpendrive" />
+  </wsdl:message>
+  <wsdl:message name="GetpendriveSoapOut">
+    <wsdl:part name="parameters" element="tns:GetpendriveResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="Getlaptop">
+      <wsdl:input message="tns:GetlaptopSoapIn" />
+      <wsdl:output message="tns:GetlaptopSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getmouse">
+      <wsdl:input message="tns:GetmouseSoapIn" />
+      <wsdl:output message="tns:GetmouseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getpendrive">
+      <wsdl:input message="tns:GetpendriveSoapIn" />
+      <wsdl:output message="tns:GetpendriveSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Getlaptop">
+      <soap:operation soapAction="http://tempuri.org/Getlaptop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getmouse">
+      <soap:operation soapAction="http://tempuri.org/Getmouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getpendrive">
+      <soap:operation soapAction="http://tempuri.org/Getpendrive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Getlaptop">
+      <soap12:operation soapAction="http://tempuri.org/Getlaptop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getmouse">
+      <soap12:operation soapAction="http://tempuri.org/Getmouse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getpendrive">
+      <soap12:operation soapAction="http://tempuri.org/Getpendrive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="https://localhost:44351/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="https://localhost:44351/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

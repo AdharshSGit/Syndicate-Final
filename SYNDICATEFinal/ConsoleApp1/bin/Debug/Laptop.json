@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "23",
+    "Brand": "Dellsdjaskdjask",
+    "Model": "Inspiron3481",
+    "Price": 100
+  },
+  {
+    "Id": "22",
+    "Brand": "Asus",
+    "Model": "ROG Strix G",
+    "Price": 74990
+  },
+  {
+    "Id": "33",
+    "Brand": "Acer",
+    "Model": "Nitro 5",
+    "Price": 57990
+  },
+  {
+    "Id": "44",
+    "Brand": "Lenovo",
+    "Model": "Ideapad",
+    "Price": 27990
+  }
+]
